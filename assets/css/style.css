@@ -1,0 +1,28 @@
+button{
+    box-align: center;
+    background-color: rgb(49, 233, 246);
+}
+::placeholder{
+    color: rgb(0, 0, 0);
+}
+h1{
+    text-align: center;
+}
+form{
+   background-color: rgb(245, 196, 99);
+   margin-top: 6px;
+   margin-left: 500px;
+   margin-right: 500px;
+   padding: 2%;
+}
+*{
+    font-weight: bold;
+}
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    
+  }
+  

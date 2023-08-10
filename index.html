@@ -11,8 +11,84 @@
 </head>
 <body>
 <h1>STUDENT ENROLLMENT FORM</h1>
-    <form>
     
+        <form >
+        <label for="user-firstname">First name:</label><br>
+        <input type="text"
+               placeholder="Enter your first name"
+               id="user-firstname" 
+               name="user-firstname"required/><br>
+               <br>
+           <label for="user-lastname">Last name:</label><br>
+           <input type="text"
+               placeholder="Enter your last name"
+               id="user-lastname"
+               name="user-lastname"required/><br>
+               <br>
+
+               <label for="user-Regno">Register number:</label><br>
+           <input type="text"
+               placeholder="Enter your Reg no"
+               id="user-Reg no"
+               name="user-Reg no"required/><br>
+               <br>
+            
+               <label for="user-mob">Phone No:</label><br>
+               <input type="text"
+                   placeholder="Enter your Phone num"
+                   id="user-mob"
+                   name="user-mob"
+                   pattern="[6789][0-9]{9}"required/><br><br>
+
+               <label for="Gender"required>Gender:</label><br>
+               <input type="radio" id="gender" name="gender" value="male"/>Male
+               <input type="radio" id="gender" name="gender" value="female"/>Female
+               <input type="radio" id="gender" name="gender" value="other"/>other
+               <br><br>
+               <label for="user-email">Email:</label><br>
+               <input type="text"
+                   placeholder="Enter your Email"
+                   id="user-email"
+                   name="user-email"
+                   pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$"required/><br>
+                   <br>
+          
+                   <label for="dept">Department:</label><br>
+                   <select id="dept">
+                   <option value="blank">--</option>
+                   <option value="cse">Cse</option>
+                   <option value="IT">IT</option>
+                   <option value="Ece">ECE</option>
+                   <option value="mech">Mech</option>
+                   <option value="eee">EEE</option>
+                   <option value="Aids">AI&DS</option>
+                   </select><br><br>
+
+                   <label for="year">Year:</label><br>
+                   <select id="year">
+                   <option value="1">1st</option>
+                   <option value="2">2nd</option>
+                   <option value="3">3rd</option>
+                   <option value="4">4th</option>
+                   </select><br><br>
+
+               <label for="Gender"required>Languages known:</label>
+               <input type="checkbox"  name="language known" value="c"/>C
+               <input type="checkbox"  name="language known" value="c++"/>C++
+               <input type="checkbox"  name="language known" value="Java"/>Java 
+               <input type="checkbox"  name="language known" value="python"/>Python   
+               
+               <br><br>
+               <label for="slots"required>Availabe slots:</label><br>
+               <input type="radio"  name="slots" value="10am"/>10 am
+               <input type="radio"  name="slots" value="2pm"/>2 pm
+               <input type="radio"  name="slots" value="5pm"/>5pm
+               <br><br>
+               <label for="myfile">Attach your resume:</label><br>
+               <input type="file" id="myfile" name="myfile" pattern=".+\.pdf$">
+               <br><br>
+               <button> SUBMIT</button>
+     </div>
     </form>
 </body>
 </html>
